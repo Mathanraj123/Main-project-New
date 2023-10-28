@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <center>
+        <form onsubmit="return validate();" action="Order.html">
+            <table>
+                <tr class="fname">
+                    <td>Name <br><input id="fname" name="name" type="text" placeholder="Enter Your First Name" value=""></td>
+                </tr>
+                <tr>
+                    <td id="fname_">*please fill your name</td>
+                </tr>
+                <tr  class="mobno">
+                    <td>Mobile No<br><input id="mobno" name="mobno" type="number" placeholder="Mobile number"></td>
+                </tr>
+                <tr>
+                    <td id="mobno_">*please fill your Mobile no</td>
+                </tr>
+                <tr class="email">
+                    <td>Email <br><input id="email" type="email" name="email" placeholder="abc@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td id="email_">*please fill your email id</td>
+                </tr>
+                <tr class="addrs">
+                    <td>Address1 <br><input id="addrs1" name="address1" type="text" placeholder="Address"></td>
+                </tr>
+                <tr>
+                    <td id="addrs_">*please fill your address</td>
+                </tr>
+                <tr class="addrs2">
+                    <td>Address2 <br><input id="addrs2" name="address2" type="text" placeholder="Address"></td>
+                </tr>
+                <tr  height="80" class="dist">
+                    <td>District <br><input id="dist" name="district" type="text" placeholder="District"></td><br><br>
+                </tr>
+                <tr>
+                    <td id="dist_">*please fill your district</td>
+                </tr>
+                <tr class="state">
+                    </td><td>State <br><input id="state" name="state" type="text" placeholder="State"></td>
+                </tr>
+                <tr>
+                    <td id="state_">*please fill your state</td>
+                </tr>
+                <tr class="country">
+                </td><td>Country <br><input id="country" name="country" type="text" placeholder="country"></td>
+                </tr>
+                <tr>
+                    <td id="country_">*please fill your country</td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="submit">Checkout</button></td>
+                </tr>
+            </table>
+        </form>
+    </center>   
+    <script src="project.js"></script>
+</body>
+</html>

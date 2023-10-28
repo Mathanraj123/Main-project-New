@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="img/logo.png" type="icon" >
+    <title>Leowatch's</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img class="logo-img" src="img/logo.png" width="75px" height="69px" alt="">
+            <div class="title">
+                <h1 class="logo">LEOWATCH'S</h1>
+            </div>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <div class="type">
+                <a href="#men">Men</a>
+                <a href="#women">Women</a>
+                <a href="#unisex">Unisex</a>
+            </div>
+            <center>
+                <div class="box">
+                    <div class="cart_count">0</div>
+                    <img class="carticon" src="img/cart img.png" alt="" width="40px" height="40px">
+                </div>
+            </center>
+            <div class="cart">
+                <div class="cart-title">Cart Item</div>
+                    <div class="cart-content">
+                        <!-- <div class="cart-box">
+                            <img src="img/Mens/img1.jpg" class="cart-img" alt="">
+                            <div class="detail-box">
+                                <div class="cart-watch-title">Titan</div>
+                                <div class="price-box">
+                                    <div class="cart-price">Rs.2000</div>
+                                    <div class="cart-amt">Rs.2000</div>
+                                </div>
+                                <input type="number" value=1 class="cart-qty">
+                            </div>
+                            <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+                        </div>
+                        <div class="cart-box">
+                            <img src="img/Mens/img1.jpg" class="cart-img" alt="">
+                            <div class="detail-box">
+                                <div class="cart-watch-title">Titan</div>
+                                <div class="price-box">
+                                    <div class="cart-price">Rs.2000</div>
+                                    <div class="cart-amt">Rs.2000</div>
+                                </div>
+                                <input type="number" value=1 class="cart-qty">
+                            </div>
+                            <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
+                        </div> -->
+                    </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <a href="checkout.html" onclick="return order()" class="btn-buy">Place Order</a>
+                <ion-icon  name="close-outline" id="cart-close"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="Men" id="men">
+            <h2 class="title1">Men's <span class="title-span">Collection</span></h2>
+                <div class="shop-content">
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img1.jpg" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">Titan</h2>
+                        <span class="price">Rs.1000</span>
+                        <h6 class="num">id:1000</h6>
+                        <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                    </div>
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img 2.jpg" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">Walrus</h2>
+                        <span class="price">Rs.3600</span>
+                        <h6 class="num">id:1100</h6>
+                        <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                    </div>
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img3.jpg" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">G-Shock</h2>
+                        <span class="price">Rs.5000</span>
+                        <h6 class="num">id:1200</h6>
+                        <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                    </div>
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img 6.jpg" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">Rolex</h2>
+                        <span class="price">Rs.15000</span>
+                        <h6 class="num">id:1300</h6>
+                        <ion-icon name="cart-sharp" class="add-cart" class="add-cart"></ion-icon>
+                    </div>
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img 5.jpg" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">Fastrack</h2>
+                        <span class="price">Rs.2500</span>
+                        <h6 class="num">id:1400</h6>
+                        <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                    </div>
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img4.jpg" width="15px" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">Sonata</h2>
+                        <span class="price">Rs.3000</span>
+                        <h6 class="num">id:1500</h6>
+                        <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                    </div>
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img 7.jpg" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">Omax</h2>
+                        <span class="price">Rs.3500</span>
+                        <h6 class="num">id:1600</h6>
+                        <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                    </div>
+                    <div class="watch-box">
+                        <div class="pic">
+                            <img src="img/Mens/img 8.jpg" alt="" class="img">
+                        </div>
+                        <h2 class="watch-name">Fossil</h2>
+                        <span class="price">Rs.10000</span>
+                        <h6 class="num">id:1700</h6>
+                        <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                    </div>
+                </div>
+        </section>
+        <section class="women" id="women">
+            <h2 class="title2">Women's <span class="title-span">Collection</span></h2>
+            <div class="shop-content1">
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-1.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Titan</h2>
+                    <span class="price">Rs.1000</span>
+                    <h6 class="num">id:2000</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-2.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Walrus</h2>
+                    <span class="price">Rs.3600</span>
+                    <h6 class="num">id:2100</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-3.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Omega</h2>
+                    <span class="price">Rs.5000</span>
+                    <h6 class="num">id:2200</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-4.jpeg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Omex</h2>
+                    <span class="price">Rs.15000</span>
+                    <h6 class="num">id:2300</h6>
+                    <ion-icon name="cart-sharp" class="add-cart" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-5.jpeg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Fastrack</h2>
+                    <span class="price">Rs.2500</span>
+                    <h6 class="num">id:2400</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-6.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Sonata</h2>
+                    <span class="price">Rs.3000</span>
+                    <h6 class="num">id:2500</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-7.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Timex</h2>
+                    <span class="price">Rs.3500</span>
+                    <h6 class="num">id:2600</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/women/img-8.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Fossil</h2>
+                    <span class="price">Rs.10000</span>
+                    <h6 class="num">id:2700</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section class="unisex" id="unisex">
+            <h2 class="title3">Unisex <span class="title-span" >Collection</span></h2>
+            <div class="shop-content2">
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-1.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Titan</h2>
+                    <span class="price">Rs.1000</span>
+                    <h6 class="num">id:3000</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-2.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Omax</h2>
+                    <span class="price">Rs.3600</span>
+                    <h6 class="num">id:3100</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-3.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Omega</h2>
+                    <span class="price">Rs.5000</span>
+                    <h6 class="num">id:3200</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-4.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Rolex</h2>
+                    <span class="price">Rs.15000</span>
+                    <h6 class="num">id:3300</h6>
+                    <ion-icon name="cart-sharp" class="add-cart" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-5.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Apple</h2>
+                    <span class="price">Rs.25000</span>
+                    <h6 class="num">id:3400</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-6.jpeg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Fossil</h2>
+                    <span class="price">Rs.3000</span>
+                    <h6 class="num">id:3500</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-7.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Boat</h2>
+                    <span class="price">Rs.3500</span>
+                    <h6 class="num">id:3600</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+                <div class="watch-box">
+                    <div class="pic">
+                        <img src="img/Unisex/img-8.jpg" alt="" class="img">
+                    </div>
+                    <h2 class="watch-name">Huawei</h2>
+                    <span class="price">Rs.10000</span>
+                    <h6 class="num">id:3700</h6>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                </div>
+            </div>      
+        </section>
+    </div>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam, porro aperiam distinctio omnis dolor maxime quis laudantium quae id doloremque voluptatem enim dignissimos quam animi nesciunt aliquam ipsum minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam, porro aperiam distinctio omnis dolor maxime quis laudantium quae id doloremque voluptatem enim dignissimos quam animi nesciunt aliquam ipsum minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam, porro aperiam distinctio omnis dolor maxime quis laudantium quae id doloremque voluptatem enim dignissimos quam animi nesciunt aliquam ipsum minima.
+    </p>
+    <center>
+        <div class="media_icon">
+            <a class="insta" href="https://www.instagram.com/fastrackworld/?hl=en"><img src="img/instagram_2111463.png" alt="" width="35px" class="insta"></i></a>
+            <a class="twitter" href="https://twitter.com/fastrack?lang=en"><img src="img/twitter logo.png" alt="" width="33px" class="insta"></i></a>
+            <a class="fb" href="https://twitter.com/fastrack?lang=en"><ion-icon name="logo-facebook"></ion-icon></i></a>
+            <a class="yt" href="https://www.youtube.com/@fastrackworld/about"><ion-icon name="logo-youtube"></ion-icon></i></a>
+            <p class="end">ⓔ 2023 Leo Company Limited || All Right Reserved </p>
+        </div>
+    </center>
+    
+    <script src="project.js"></script>
+</body>
+</html>
