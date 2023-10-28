@@ -400,6 +400,7 @@ header{
 
 
 table{
+    font-family: Arial Narrow;
     font-size: 20px;
     background: linear-gradient(rgb(230, 228, 111),rgb(247, 164, 63));
     padding: 30px;
@@ -546,5 +547,21 @@ table{
 }
 
 .ordered{
-    margin-top: 250px;
+    font-family: Arial Narrow;
+    margin-top: 200px;
+}
+
+.home{
+    font-family: Arial Narrow;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: rgb(255, 102, 0);
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.home:hover{
+    color: white;
 }
