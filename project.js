@@ -159,7 +159,7 @@ function validate(){
     let fname=document.getElementById("fname")
     let mobno=document.getElementById("mobno")
     let email=document.getElementById("email")
-    let addrs=document.getElementById("addrs")
+    let addrs=document.getElementById("addrs1")
     let dist=document.getElementById("dist")
     let state=document.getElementById("state")
     let country=document.getElementById("country")
