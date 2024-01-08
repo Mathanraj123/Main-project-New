@@ -56,11 +56,9 @@ function changeQty(){
         this.value=1
     }
 loadcontent()
-
 }
 
 let itemlist=[]
-
 
 //add cart
 function addItem(){
@@ -70,15 +68,15 @@ function addItem(){
     let imgsrc=watch.querySelector('.img').src
     let num=watch.querySelector('.num').innerHTML
 
-    // console.log(name,price,imgsrc)
+    // console.log(title,price,imgsrc)
 
-    let newproduct={title,price,imgsrc,num}
+    newproduct={title,price,imgsrc,num}
 
     //check product already exist in the cart
 
     if(itemlist.find((el)=>el.num==newproduct.num)){
         alert("Product is already added in the cart")
-        return
+        return 
     }else
     {
         itemlist.push(newproduct)
@@ -92,13 +90,11 @@ function addItem(){
 
     cartbasket.append(element)
     loadcontent()
-
 }  
 
 
 function createcartproduct(title,price,imgsrc){
     return`
-    <div class="cart-content">
     <div class="cart-box">
         <img src=${imgsrc} class="cart-img" alt="">
         <div class="detail-box">
@@ -207,8 +203,24 @@ let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.type');
 
 menu.onclick = () =>{
-
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
-
 }
+
+let productContainer = document.querySelector('.container')
+let search = document.querySelector('.search-box')
+let watchContainer = productContainer.querySelectorAll('.watch-box')
+
+search.addEventListener('keyup',(e)=>{
+    let enterdValue = e.target.value.toUpperCase()
+
+    for(let i=0;i<watchContainer.length;i++){
+        let productName = watchContainer[i].querySelector('.watch-name').textContent
+
+        if(productName.toUpperCase().indexOf(enterdValue)<0){
+            watchContainer[i].style.display="none"
+        }else{
+            watchContainer[i].style.display="inline-block"
+        }
+    }
+})
